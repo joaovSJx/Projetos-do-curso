@@ -79,12 +79,15 @@ def horario_disponivel(servico_id, data, hora):
     return resultado is None
 
 
+# Horarios disponiveis
 
 horarios = [
     "08:00", "09:00", "10:00", "11:00",
     "13:00", "14:00", "15:00", "16:00"
 ]
 
+
+#Listar horarios disponiveis
 def listar_horarios_disponiveis(servico_id, data,):
     conn = conectar()
     cursor = conn.cursor()
