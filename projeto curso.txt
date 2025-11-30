@@ -1,0 +1,39 @@
+RFC:
+2: Escolha de serviços
+5: login
+6: Confirmar agendamento
+7: Desmarcar
+8: Sair
+9: Visualizar agendamento
+
+RFP:
+1: Login
+4: serviços
+5: Confirmar agendamento
+6: Cancelar
+7: Sair
+8: Cadastrar cliente
+9: Buscar cliente
+10: Listar cliente
+11: Listar agendamentos
+12: adicionar serviços
+
+RFN:
+1: Escalabilidade
+2: Acessibilidade
+3: Usabilidade
+4: Responsividade
+5: Manutenibilidade
+6: Segurança
+7: Armazenamento 
+
+
+
+Classes:
+Patrão(pai):
+atributos:Datas disponiveis, Horarios
+metodos:Login, Cancelar, Sair, Confirmar agendamento, cadastrar cliente, buscar cliente, listar cliente, listar agendamentos
+
+Usario:
+atributos:Datas disponiveis, Horarios
+metodos:Login, Cancelar, Sair, Confirmar agendamento, escolha de serviços, visualizar agendamento
