@@ -1,0 +1,7 @@
+{
+    "liveshare.languages.allowGuestCommandControl": true,
+    "python.analysis.extraPaths": [
+        "./Back",
+        "./Front"
+    ]
+}

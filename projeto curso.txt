@@ -1,39 +1,40 @@
-RFC:
-2: Escolha de serviços
-5: login
-6: Confirmar agendamento
-7: Desmarcar
-8: Sair
-9: Visualizar agendamento
+PySide6/__init__.py: Unable to import Shiboken from C:\Users\João\OneDrive\Documentos\Projeto curso\main, C:\Users\João\AppData\Local\Programs\Python\Python314\python314.zip, C:\Users\João\AppData\Local\Programs\Python\Python314\DLLs, C:\Users\João\AppData\Local\Programs\Python\Python314\Lib, C:\Users\João\AppData\Local\Programs\Python\Python314, C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\site-packages: cannot import name '_idfunc' from partially initialized module 'typing' (most likely due to a circular import) (C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\typing.py)
+Traceback (most recent call last):
+  File "C:\Users\João\OneDrive\Documentos\Projeto curso\main\mainU.py", line 3, in <module>
+    from PySide6.QtWidgets import QApplication
+  File "C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\site-packages\PySide6\__init__.py", line 143, in <module>
+    _setupQtDirectories()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\site-packages\PySide6\__init__.py", line 66, in _setupQtDirectories
+    from shiboken6 import Shiboken
+  File "C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\site-packages\shiboken6\__init__.py", line 25, in <module>
+    import typing
+  File "C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\typing.py", line 32, in <module>
+    from typing import (
+    ...<10 lines>...
+    )
+mee dá um toque qnd achar, a bosta do cachorro fugiu
 
-RFP:
-1: Login
-4: serviços
-5: Confirmar agendamento
-6: Cancelar
-7: Sair
-8: Cadastrar cliente
-9: Buscar cliente
-10: Listar cliente
-11: Listar agendamentos
-12: adicionar serviços
+ImportError: cannot import name '_idfunc' from partially initialized module 'typing' (most likely due to a circular import) (C:\Users\João\AppData\Local\Programs\Python\Python314\Lib\typing.py)
+PS C:\Users\João\OneDrive\Documentos\Projeto curso> 
 
-RFN:
-1: Escalabilidade
-2: Acessibilidade
-3: Usabilidade
-4: Responsividade
-5: Manutenibilidade
-6: Segurança
-7: Armazenamento 
+py --version
+py -0
+py -3.12 -m venv venvvenv\Scripts\activate
 
+venv\Scripts\activatepip install PySide6
 
+py -3.12 -m venv venv
 
-Classes:
-Patrão(pai):
-atributos:Datas disponiveis, Horarios
-metodos:Login, Cancelar, Sair, Confirmar agendamento, cadastrar cliente, buscar cliente, listar cliente, listar agendamentos
+venv\Scripts\activate
 
-Usario:
-atributos:Datas disponiveis, Horarios
-metodos:Login, Cancelar, Sair, Confirmar agendamento, escolha de serviços, visualizar agendamento
+File "C:\Users\João\OneDrive\Documentos\Projeto curso\main\mainU.py", line 11, in <module>
+    from Login import LoginWindow
+  File "C:\Users\João\OneDrive\Documentos\Projeto curso\Front\Login.py", line 20, in <module>
+    from cadastrar import cadastrar_conta, verificar_login
+  File "C:\Users\João\OneDrive\Documentos\Projeto curso\Front\..\Back\cadastrar.py", line 1, in <module>
+    from banco import conectar
+  File "C:\Users\João\OneDrive\Documentos\Projeto curso\Front\..\Back\banco.py", line 48
+    <<<<<<< HEAD
+    ^^
+SyntaxError: invalid syntaxs
